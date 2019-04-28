@@ -17,7 +17,7 @@
         <li v-for="post in posts">
           <img :src="post.author.avatar_url" alt="">
           <span class="allcount">
-          <span class="reply_count">{{post.rely_count}}</span>
+          <span class="reply_count">{{post.reply_count}}</span>
           /{{post.visit_count}}</span>
           <span :class="[{put_good :(post.good === true),put_top:(post.top === true),
       'topiclist-tab':(post.good !== true && post.top !== true)}]">{{post |tabFormatter}}</span>
